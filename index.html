@@ -1,71 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hungry Monstar</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel = "stylesheet" href = "style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monstar</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <div class = "container">
-    <div class = "wrap">
-      <div class = "search">
-        <div class = "search-box">
-          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "input">
-          <button type = "submit" class = "search-button btn" id = "searchButton">
-            <i class = "fas fa-search"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class = "result">
-        <h2 class = "title">Your Search Results:</h2>
-        <div id= "meal">
-          <!-- meal item -->
-          <!-- <div class = "meal-item">
-            <div class = "meal-img">
-              <img src = "food.jpg" alt = "food">
+    <main class="content-area">
+        <div class="search-bar col-md-6 mx-auto">
+            <h1 class="text-center mt-5">Hungry Monstar</h1>
+            <div class="search-box my-5">
+                <input id="search-field" type="text" class="form-control" placeholder="Search For Meal">
+                <button onclick="searchMeals()" class="btn btn-success search-btn">Search</button>
             </div>
-            <div class = "meal-name">
-              <h3>Potato Chips</h3>
-              <a href = "#" class = "recipe-btn">Get Recipe</a>
-            </div>
-          </div> -->
-          <!-- end of meal item -->
         </div>
-      </div>
 
-
-      <div class = "meal-details">
-        <!-- recipe close btn -->
-        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-          <i class = "fas fa-times"></i>
-        </button>
-
-        <!-- meal content -->
-        <div class = "meal-details-content">
-          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
-          <p class = "recipe-category">Category Name</p>
-          <div class = "recipe-instruct">
-            <h3>Instructions:</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
-          </div>
-          <div class = "recipe-meal-img">
-            <img src = "food.jpg" alt = "">
-          </div>
-          <div class = "recipe-link">
-            <a href = "#" target = "_blank">Watch Video</a>
-          </div> -->
+        <div class="text-center " id="meal-details">
+                
         </div>
-      </div>
-    </div>
-  </div>
+
+        <div class="search-result mx-auto py-4 container" id="meal-list">
+    
+        </div>
 
 
 
-  <script src = "script.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script Here -->
+    <script src="script.js"></script>
 </body>
 </html>
