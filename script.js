@@ -4,7 +4,6 @@ function searchMeals(){
     fetch(url)
     .then(res => res.json())
     .then(data => {
-        // console.log(data);
         getMeals(data.meals);
     })
 }
@@ -49,7 +48,6 @@ function getDetails(meal1){
        <li>${mealDetail.strIngredient1}</li>
        <li>${mealDetail.strIngredient2}</li>
        <li>${mealDetail.strIngredient3}</li>
-       <li>${mealDetail.strIngredient4}</li>
        </ul>
       
        `;
