@@ -6,7 +6,5 @@ This is a simple project of Vanilla Javascript and Rest API
 
 Check out the live link and get some fun ...............
 
-![Uploading hungry-monster.png…]()
-
 Live site : https://nazmulhudaa.github.io/hungry-monstar/
 
